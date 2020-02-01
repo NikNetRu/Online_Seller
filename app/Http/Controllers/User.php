@@ -23,7 +23,7 @@ class User extends Controller
      */
     public function ChangePersonalData (array $personaData = null, request $request = null){
         if ($personaData != null) {
-            d
+            
         }
         if ($request != null) {
             
