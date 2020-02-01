@@ -1,0 +1,60 @@
+body {
+    background-image: url(../images/imageForSite/background1.jpg);
+}
+
+
+
+header {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-menu {
+    margin-left: 50px;
+}
+
+.caroselNews {
+    width: 60%; 
+    margin: auto;
+    justify-content: center;
+}
+
+.carouselBlock {
+    background-color: #cccccc;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; 
+margin: auto;
+}
+
+
+
+ul,li {
+    display: block;
+    margin: 5px;
+}
+
+.logo {
+    font-style:italic;
+    font-size: 22px;
+    color: #f9f7ff;
+    margin: 1px;
+}
+.menu-bar {
+    padding: 20px;
+}
+
+
+
+.userInfo {
+    
+}
+
+.userInfo a:hover {
+    text-decoration: none;
+    color: #999999; 
+}
