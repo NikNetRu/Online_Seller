@@ -22,7 +22,10 @@
                 <div class = "col-sm-9">
                     <div class = "userInfo row justify-content-end">
                     @auth
-                    Для зарегестрированных
+                    {{Auth::user()->email}}
+                    <a href = "{{ route('userPage') }}">Личынй кабинет</a>
+                    <a href = "{{ route('productManager') }}">Управлени продектами</a>
+                    <a href = "{{ route('logout') }}">Выйти</a>
                     @endauth
                     @unless (Auth::check())
                     <a class="text-dark px-md-1 align-middle" href="{{ route('login') }}">Войти</a>
@@ -38,7 +41,7 @@
                 <nav class = "main-menu">
                     <ul class = "menu d-flex sm-auto">
                         <li class="menu__item">
-                            <button type="button" class="btn btn-warning">Главная</button>
+                            <a href=" {{route('home') }} "><button type="button" class="btn btn-warning">Главная</button></a>
                         </li>
                         <li class="menu__item">
                             <div class="btn-group">
