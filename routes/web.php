@@ -31,6 +31,7 @@ Route::get('auth/logout', function () {
 //Генерация страниц
 Route::get('userPage', 'UserController@generateUserPage')->name('userPage');
 Route::get('productManager', 'ProductController@generateProductManagerPage')->name('productManager');
+Route::get('newsManager', 'NewsController@loadNews')->name('newsManager');
 //изменение данных
 Route::post('changePersonalData', 'UserController@changePersonalData')->name('changePersonalData');
 Route::post('addCategory', 'ProductController@addCategory')->name('addCategory');
@@ -38,3 +39,7 @@ Route::post('deleteCategory', 'ProductController@deleteCategory')->name('deleteC
 Route::post('addProduct', 'ProductController@addProduct')->name('addProduct');
 Route::post('deleteProduct', 'ProductController@deleteProduct')->name('deleteProduct');
 Route::post('setDiscount', 'ProductController@setDiscount')->name('setDiscount');
+//Роутинг с главной страницы выпадающего списка "Продукты"
+Route::get('category/{name}', 'ProductController@getProductsPage');
+//Роутинг на персональную страницу продукта
+Route::get('category/{name}/{id}', 'ProductController@getProductPage');

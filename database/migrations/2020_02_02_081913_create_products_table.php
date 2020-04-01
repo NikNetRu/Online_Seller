@@ -18,9 +18,10 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('category');
             $table->string('image'); //ссылка на файл
-            $table->string('description'); // ссылка на файл 
+            $table->string('description'); // короткое описание
+            $table->string('longDescription'); //хранится ссылка на файл
             $table->integer('price');
-            $table->integer('discount')->default(0);
+            $table->integer('discount')->default(0); //установить размер скидки  
             $table->timestamps();
         });
     }

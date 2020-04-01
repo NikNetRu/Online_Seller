@@ -1,6 +1,7 @@
 @extends('welcome')
 
 @section('middleBlock')
+<div class="userPage ml-5 mr-5">
 <form  method="POST" action="{{ route('changePersonalData') }}">
   @csrf
   <div class="form-group row">
@@ -35,4 +36,5 @@
   </div>
     <button type="submit" class="btn btn-primary mb-2">Подтвердить</button>
 </form>
+</div>
 @endsection
