@@ -56,13 +56,14 @@ ul,li {
 
 .userInfo a:hover {
     text-decoration: none;
-    color: #999999; 
+    color: #999999;
 }
 
 .userPage {
     margin: 5px;
 }
 
-.productManager {
-    
+.item-menu {
+    color: red;
+    margin: 5px;
 }
